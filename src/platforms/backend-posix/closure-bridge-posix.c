@@ -53,6 +53,7 @@ static ClosureBridgeTrampolineTable *ClosureBridgeTrampolineTableAllocate(void) 
 
 static void ClosureBridgeTrampolineTableFree(ClosureBridgeTrampolineTable *table) { return; }
 
+/*
 ClosureBridgeData *ClosureBridgeAllocate(void *user_data, void *user_code) {
     long page_size                      = sysconf(_SC_PAGESIZE);
     ClosureBridgeTrampolineTable *table = gClosureBridageTrampolineTable;
@@ -100,5 +101,6 @@ ClosureBridgeData *ClosureBridgeAllocate(void *user_data, void *user_code) {
 
     return bridgeData;
 }
+*/
 
 static void ClosureBridgeFree(ClosureBridgeData *bridgeData) { return; }

@@ -10,6 +10,14 @@
 #include "interceptor.h"
 #include "zkit.h"
 
+typedef struct _DynamicClosureTrampoline {
+    PRIAVE void *trampolineTo;
+
+    void *user_code;
+    void *user_data;
+    void *redirect_trampoline;
+} DynamicClosureTrampoline;
+
 void dynamic_context_begin_invocation_bridge_handler(RegState *rs, DynamicClosureTrampoline *cbd);
 
 void dynamic_context_end_invocation_bridge_handler(RegState *rs, DynamicClosureTrampoline *cbd);
