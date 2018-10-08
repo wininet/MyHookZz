@@ -67,7 +67,7 @@ __attribute__((gnu_inline, always_inline)) __inline__ static void trap_instructi
  * Both instruction sequences below work. */
 #if 1
     /* 'eabi_linux_thumb_le_breakpoint' */
-    __asm__ volatile(".inst 0xde01");
+    __asm__ volatile(".inst.w 0xde01");
 #else
     /* 'eabi_linux_thumb2_le_breakpoint' */
     __asm__ volatile(".inst.w 0xf7f0a000");
