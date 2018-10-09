@@ -9,4 +9,4 @@ LOCAL_STATIC_LIBRARIES := hookzz
 
 include $(BUILD_SHARED_LIBRARY)
 
-include D:\CodeDocument\project\HookZz\Android.mk
+include D:\Git\MyHookZz\Android.mk
